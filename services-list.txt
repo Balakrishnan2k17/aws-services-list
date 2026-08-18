@@ -50,6 +50,7 @@ VPC
 AWS Transit Gateway
 
 
+Linux
 Git
 GitHub
 GitHub Actions 
