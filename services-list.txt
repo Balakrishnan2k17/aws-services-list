@@ -17,7 +17,6 @@ CloudWatch
 SNS
 SQS
 SES
-AWS X-Ray
 SSM
 RDS
 CloudTrail
@@ -38,10 +37,12 @@ Application Discovery Service
 DataSync
 Inspector
 CodeBuild
+CodeArtifact
 CodeDeploy
 CodePipeline
 Health Dashboard
 Cost Explorer
+AWS Budgets
 Amplify
 Macie
 DynamoDB
