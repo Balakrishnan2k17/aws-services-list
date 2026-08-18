@@ -1,0 +1,50 @@
+IAM
+EC2
+ELB
+ASG
+EBS
+EFS
+CloudFront
+S3
+Amazon Route53
+ACM
+Lambda
+API Gateway
+ECS
+ECR
+EKS
+CloudWatch
+SNS
+SQS
+SES
+AWS X-Ray
+SSM
+RDS
+CloudTrail
+KMS
+AWS Secrets Manager
+WAF
+Amazon GuardDuty
+AWS Security Hub
+Organizations
+Control Tower
+Config
+Amazon EventBridge
+Athena
+Trusted Advisor
+Application Migration Service
+Database Migration Service
+Application Discovery Service
+DataSync
+Inspector
+CodeBuild
+CodeDeploy
+CodePipeline
+Health Dashboard
+Cost Explorer
+Amplify
+Macie
+DynamoDB
+Aurora
+VPC
+AWS Transit Gateway
