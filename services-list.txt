@@ -57,18 +57,17 @@ AWS Services:
 37. DataSync
 38. Inspector
 39. CodeBuild
-40. CodeArtifact
-41. CodeDeploy
-42. CodePipeline
-43. Health Dashboard
-44. Cost Explorer
-45. AWS Budgets
-46. Amplify
-47. Macie
-48. DynamoDB
-49. Aurora
-50. VPC
-51. AWS Transit Gateway
+40. CodeDeploy
+41. CodePipeline
+42. Health Dashboard
+43. Cost Explorer
+44. AWS Budgets
+45. Amplify
+46. Macie
+47. DynamoDB
+48. Aurora
+49. VPC
+50. AWS Transit Gateway
 
 
 -------------------
