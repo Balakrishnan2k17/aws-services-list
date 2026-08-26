@@ -1,54 +1,72 @@
-IAM
-EC2
-ELB
-ASG
-EBS
-EFS
-CloudFront
-S3
-Amazon Route53
-ACM
-Lambda
-API Gateway
-ECS
-ECR
-EKS
-CloudWatch
-SNS
-SQS
-SES
-SSM
-RDS
-CloudTrail
-KMS
-AWS Secrets Manager
-WAF
-Amazon GuardDuty
-AWS Security Hub
-Organizations
-Control Tower
-Config
-Amazon EventBridge
-Athena
-Trusted Advisor
-Application Migration Service
-Database Migration Service
-Application Discovery Service
-DataSync
-Inspector
-CodeBuild
-CodeArtifact
-CodeDeploy
-CodePipeline
-Health Dashboard
-Cost Explorer
-AWS Budgets
-Amplify
-Macie
-DynamoDB
-Aurora
-VPC
-AWS Transit Gateway
+Network Fundamentals:
+
+1. Server 
+2. Types of servers
+3. Database
+4. Types of Databases
+5. Port 
+6. Port ranges 
+7. Protocol 
+8. Types of protocols 
+9. Data centre 
+10. OSI layer 
+11. IP Address 
+12. IP Address classes 
+13. IP Address types
+
+AWS Services:
+
+1. IAM
+2. EC2
+3. ELB
+4. ASG
+5. EBS
+6. EFS
+7. CloudFront
+8. S3
+9. Amazon Route53
+10. ACM
+11. Lambda
+12. API Gateway
+13. ECS
+14. ECR
+15. EKS
+16. CloudWatch
+17. SNS
+18. SQS
+19. SES
+20. SSM
+21. RDS
+22. CloudTrail
+23. KMS
+24. AWS Secrets Manager
+25. WAF
+26. Amazon GuardDuty
+27. AWS Security Hub
+28. Organizations
+29. Control Tower
+30. Config
+31. Amazon EventBridge
+32. Athena
+33. Trusted Advisor
+34. Application Migration Service
+35. Database Migration Service
+36. Application Discovery Service
+37. DataSync
+38. Inspector
+39. CodeBuild
+40. CodeArtifact
+41. CodeDeploy
+42. CodePipeline
+43. Health Dashboard
+44. Cost Explorer
+45. AWS Budgets
+46. Amplify
+47. Macie
+48. DynamoDB
+49. Aurora
+50. VPC
+51. AWS Transit Gateway
 
 
 -------------------
