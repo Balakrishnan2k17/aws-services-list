@@ -1,0 +1,903 @@
+AWS Services:
+
+1. IAM
+2. EC2
+3. ELB
+4. ASG
+5. EBS
+6. EFS
+7. CloudFront
+8. S3
+9. Amazon Route53
+10. ACM
+11. Lambda
+12. API Gateway
+13. ECS
+14. ECR
+15. EKS
+16. CloudWatch
+17. SNS
+18. SQS
+19. SES
+20. SSM
+21. RDS
+22. CloudTrail
+23. KMS
+24. AWS Secrets Manager
+25. WAF
+26. Amazon GuardDuty
+27. AWS Security Hub
+28. Organizations
+29. Control Tower
+30. Config
+31. Amazon EventBridge
+32. Athena
+33. Trusted Advisor
+34. Application Migration Service
+35. Database Migration Service
+36. Application Discovery Service
+37. DataSync
+38. Inspector
+39. CodeBuild
+40. CodeDeploy
+41. CodePipeline
+42. Health Dashboard
+43. Cost Explorer
+44. AWS Budgets
+45. Amplify
+46. Macie
+47. DynamoDB
+48. Aurora
+49. VPC
+50. AWS Transit Gateway
+
+
+AWS 50 Services – Real-Time Hands-on Training Curriculum
+
+1. AWS IAM (Identity and Access Management)
+
+1. Create IAM users, groups, roles, and policies.
+2. Create custom IAM policies using the JSON policy editor.
+3. Attach AWS-managed and customer-managed policies to IAM users and groups.
+4. Configure MFA for IAM users.
+5. Reset IAM user console passwords and rotate access keys.
+6. Configure IAM users to access AWS through Console, CLI, and SDK.
+7. Configure IAM roles and assume roles using AWS STS.
+8. Configure cross-account IAM role access between two AWS accounts.
+9. Implement least-privilege access using IAM policies.
+10. Configure IAM policy conditions based on IP address, region, and MFA.
+11. Configure EC2 instance profiles and attach IAM roles to EC2.
+12. Troubleshoot IAM AccessDenied errors using policy simulation and CloudTrail.
+
+2. Amazon EC2 (Elastic Compute Cloud)
+
+1. Launch Linux and Windows EC2 instances.
+2. Configure key pairs and connect to instances using SSH and RDP.
+3. Configure security groups and network access.
+4. Change EC2 instance types (vertical scaling).
+5. Stop, start, reboot, and terminate EC2 instances.
+6. Create and manage AMIs from existing EC2 instances.
+7. Launch new EC2 instances using custom AMIs.
+8. Configure EC2 user data to install Apache, Nginx, and other packages automatically.
+9. Configure EC2 instance metadata and retrieve instance information using IMDSv2.
+10. Attach and detach EBS volumes.
+11. Configure EC2 monitoring using CloudWatch.
+12. Configure EC2 instance roles using IAM.
+13. Configure EC2 Auto Recovery.
+14. Troubleshoot EC2 status check failures and SSH connectivity issues.
+15. Configure EC2 instances in public and private subnets.
+
+3. Elastic Load Balancing (ELB)
+
+1. Create an Application Load Balancer (ALB).
+2. Create a Network Load Balancer (NLB).
+3. Create target groups and register EC2 instances.
+4. Configure health checks for target groups.
+5. Configure HTTP and HTTPS listeners.
+6. Configure host-based routing using multiple domains.
+7. Configure path-based routing for different applications.
+8. Configure SSL/TLS certificates using ACM.
+9. Configure load balancing across multiple Availability Zones.
+10. Configure ALB with Auto Scaling Groups.
+11. Configure sticky sessions.
+12. Configure ALB access logs and monitor requests.
+13. Troubleshoot unhealthy targets, 502 errors, and 504 errors.
+
+4. Amazon EC2 Auto Scaling (ASG)
+
+1. Create an Auto Scaling Group.
+2. Create and configure launch templates.
+3. Configure minimum, maximum, and desired capacity.
+4. Configure scaling policies based on CPU utilization.
+5. Configure target tracking scaling policies.
+6. Configure scheduled scaling policies.
+7. Configure step scaling policies.
+8. Integrate Auto Scaling Groups with Application Load Balancers.
+9. Configure health checks and automatic instance replacement.
+10. Configure scaling across multiple Availability Zones.
+11. Test automatic scaling by generating CPU load.
+12. Configure instance termination policies and lifecycle hooks.
+
+5. Amazon EBS (Elastic Block Store)
+
+1. Create and attach EBS volumes to EC2 instances.
+2. Identify EBS devices using Linux commands.
+3. Create partitions and format volumes using ext4 and XFS.
+4. Mount EBS volumes and configure persistent mounts using `/etc/fstab`.
+5. Extend existing EBS volumes.
+6. Expand Linux partitions and file systems after increasing volume size.
+7. Create EBS snapshots.
+8. Restore EBS volumes from snapshots.
+9. Copy EBS snapshots across AWS regions.
+10. Configure EBS encryption using AWS KMS.
+11. Configure EBS volume types: gp3, io2, st1, and sc1.
+12. Troubleshoot EBS mounting and permission issues.
+
+6. Amazon EFS (Elastic File System)
+
+1. Create an EFS file system.
+2. Configure EFS mount targets across multiple Availability Zones.
+3. Configure security groups for EFS access.
+4. Install and configure EFS utilities on EC2.
+5. Mount EFS on Linux EC2 instances.
+6. Configure persistent EFS mounting using `/etc/fstab`.
+7. Mount the same EFS file system on multiple EC2 instances.
+8. Configure EFS access points.
+9. Configure IAM authorization for EFS.
+10. Configure EFS encryption at rest and in transit.
+11. Configure EFS lifecycle management and storage classes.
+12. Troubleshoot EFS mount failures and access-denied errors.
+
+7. Amazon CloudFront
+
+1. Create a CloudFront distribution.
+2. Configure an S3 bucket as an origin.
+3. Configure an EC2 instance or ALB as an origin.
+4. Configure Origin Access Control (OAC) for private S3 content.
+5. Configure custom domain names using Route 53.
+6. Integrate ACM certificates with CloudFront.
+7. Configure HTTP-to-HTTPS redirection.
+8. Configure cache behaviors and cache policies.
+9. Configure path-based origin routing.
+10. Create CloudFront cache invalidations.
+11. Configure signed URLs and signed cookies.
+12. Configure CloudFront geographic restrictions.
+13. Enable CloudFront access logging and monitoring.
+14. Troubleshoot 403, 404, and 502 errors.
+
+8. Amazon S3 (Simple Storage Service)
+
+1. Create and configure S3 buckets.
+2. Upload, download, copy, and delete objects.
+3. Configure bucket policies and IAM-based access.
+4. Configure bucket versioning.
+5. Enable static website hosting.
+6. Configure lifecycle rules to transition objects between storage classes.
+7. Configure S3 Intelligent-Tiering.
+8. Configure server-side encryption using SSE-S3 and SSE-KMS.
+9. Configure default bucket encryption.
+10. Configure cross-region replication (CRR).
+11. Configure same-region replication (SRR).
+12. Configure S3 event notifications with Lambda and SNS.
+13. Configure pre-signed URLs for secure file sharing.
+14. Configure S3 Object Lock and retention policies.
+15. Configure access logging and CloudTrail data events.
+16. Host a static website using S3 and CloudFront.
+17. Configure CORS for S3 buckets.
+18. Troubleshoot AccessDenied and bucket policy issues.
+
+9. Amazon Route 53
+
+1. Create public hosted zones.
+2. Create private hosted zones.
+3. Configure A, AAAA, CNAME, MX, TXT, and NS records.
+4. Configure domain-to-EC2 IP mapping.
+5. Configure alias records pointing to ALB and CloudFront.
+6. Configure domain names for applications using Route 53.
+7. Configure health checks.
+8. Configure failover routing policies.
+9. Configure weighted routing policies.
+10. Configure latency-based routing.
+11. Configure geolocation and geoproximity routing.
+12. Configure DNS records for primary and secondary endpoints.
+13. Troubleshoot DNS resolution using `nslookup` and `dig`.
+
+10. AWS Certificate Manager (ACM)
+
+1. Request a public SSL/TLS certificate.
+2. Request a private certificate using ACM Private CA.
+3. Validate domain ownership using DNS validation.
+4. Validate domain ownership using email validation.
+5. Configure wildcard certificates.
+6. Attach ACM certificates to ALB.
+7. Attach ACM certificates to CloudFront.
+8. Configure HTTPS listeners using ACM certificates.
+9. Configure automatic certificate renewal.
+10. Monitor certificate expiration and validation status.
+11. Troubleshoot certificate validation and domain mismatch issues.
+
+11. AWS Lambda
+
+1. Create Lambda functions using Python.
+2. Create Lambda functions using Node.js.
+3. Configure Lambda execution roles using IAM.
+4. Configure environment variables.
+5. Configure Lambda layers.
+6. Upload deployment packages and dependencies.
+7. Configure Lambda triggers using S3 events.
+8. Integrate Lambda with API Gateway.
+9. Integrate Lambda with SNS and SQS.
+10. Configure Lambda with EventBridge schedules.
+11. Configure Lambda VPC access to private resources.
+12. Configure Lambda versions and aliases.
+13. Configure reserved and provisioned concurrency.
+14. Monitor Lambda execution using CloudWatch Logs and Metrics.
+15. Configure Lambda Dead Letter Queues and destinations.
+16. Troubleshoot timeout, memory, permission, and execution errors.
+17. Build an automated EC2 start/stop solution using Lambda.
+
+12. Amazon API Gateway
+
+1. Create REST APIs.
+2. Create HTTP APIs.
+3. Create API resources and methods.
+4. Integrate API Gateway with Lambda.
+5. Integrate API Gateway with HTTP backends.
+6. Configure GET, POST, PUT, and DELETE methods.
+7. Configure request and response mappings.
+8. Configure API keys and usage plans.
+9. Configure throttling and rate limiting.
+10. Configure CORS.
+11. Configure authentication using IAM authorization.
+12. Configure Amazon Cognito authorizers.
+13. Configure custom domain names and ACM certificates.
+14. Deploy APIs using different stages.
+15. Configure stage variables.
+16. Enable API Gateway access and execution logging.
+17. Test APIs using Postman and curl.
+18. Troubleshoot 403, 404, 429, and 500 errors.
+
+13. Amazon ECS (Elastic Container Service)
+
+1. Create an ECS cluster.
+2. Deploy ECS applications using the EC2 launch type.
+3. Deploy ECS applications using the Fargate launch type.
+4. Create task definitions.
+5. Configure CPU and memory limits.
+6. Create and run ECS tasks.
+7. Create ECS services.
+8. Deploy Docker containers from ECR.
+9. Configure ECS networking using public and private subnets.
+10. Configure ECS task execution roles and task roles.
+11. Configure Application Load Balancer integration.
+12. Configure ECS service auto scaling.
+13. Configure environment variables and secrets.
+14. Mount EFS volumes into ECS containers.
+15. Configure CloudWatch logging for ECS tasks.
+16. Configure ECS rolling deployments.
+17. Configure ECS blue/green deployments.
+18. Troubleshoot ECS task startup failures, image pull failures, and container health checks.
+
+14. Amazon ECR (Elastic Container Registry)
+
+1. Create private ECR repositories.
+2. Authenticate Docker with ECR.
+3. Build Docker images locally.
+4. Tag Docker images with ECR repository URLs.
+5. Push Docker images to ECR.
+6. Pull images from ECR onto EC2.
+7. Configure ECR repository policies.
+8. Configure image scanning.
+9. Configure image tag immutability.
+10. Configure lifecycle policies to delete older images.
+11. Configure cross-account ECR access.
+12. Configure cross-region image replication.
+13. Integrate ECR with ECS and EKS.
+14. Troubleshoot Docker authentication and image push/pull errors.
+
+15. Amazon EKS (Elastic Kubernetes Service)
+
+1. Create an EKS cluster.
+2. Configure the AWS CLI, kubectl, and eksctl.
+3. Create and configure managed node groups.
+4. Configure Fargate profiles.
+5. Deploy Kubernetes pods.
+6. Create Kubernetes deployments and services.
+7. Configure ClusterIP, NodePort, and LoadBalancer services.
+8. Deploy applications using YAML manifests.
+9. Deploy applications using Helm charts.
+10. Integrate EKS with ECR.
+11. Configure AWS Load Balancer Controller.
+12. Configure IAM Roles for Service Accounts (IRSA).
+13. Configure EKS Pod Identity.
+14. Configure persistent storage using EBS CSI and EFS CSI drivers.
+15. Configure Horizontal Pod Autoscaler.
+16. Configure Cluster Autoscaler or Karpenter.
+17. Configure EKS logging and monitoring.
+18. Upgrade EKS cluster versions and node groups.
+19. Troubleshoot CrashLoopBackOff, ImagePullBackOff, and networking issues.
+
+16. Amazon CloudWatch
+
+1. Create CloudWatch dashboards.
+2. Create metric alarms for EC2 CPU utilization.
+3. Monitor memory and disk utilization using CloudWatch Agent.
+4. Configure CloudWatch Logs.
+5. Create log groups and log streams.
+6. Configure EC2 and application log collection.
+7. Create metric filters from application logs.
+8. Configure SNS notifications for CloudWatch alarms.
+9. Create composite alarms.
+10. Configure CloudWatch Logs Insights queries.
+11. Configure custom metrics using AWS CLI and SDK.
+12. Configure log retention policies.
+13. Monitor Lambda, ECS, ALB, and RDS metrics.
+14. Create CloudWatch Synthetics canaries.
+15. Troubleshoot application performance using logs and metrics.
+
+17. Amazon SNS (Simple Notification Service)
+
+1. Create standard SNS topics.
+2. Create FIFO SNS topics.
+3. Subscribe email endpoints to SNS topics.
+4. Subscribe HTTP/HTTPS endpoints.
+5. Configure SMS notifications.
+6. Configure SQS subscriptions to SNS.
+7. Configure Lambda subscriptions to SNS.
+8. Publish messages using AWS Console and CLI.
+9. Configure SNS access policies.
+10. Configure message filtering policies.
+11. Configure delivery retries and dead-letter queues.
+12. Build CloudWatch alarm notifications using SNS.
+
+18. Amazon SQS (Simple Queue Service)
+
+1. Create standard SQS queues.
+2. Create FIFO SQS queues.
+3. Configure message retention periods.
+4. Configure visibility timeout.
+5. Send, receive, and delete messages.
+6. Configure long polling.
+7. Configure message delay.
+8. Configure dead-letter queues.
+9. Configure redrive policies.
+10. Integrate SQS with Lambda.
+11. Integrate SQS with SNS using fan-out architecture.
+12. Configure message encryption using KMS.
+13. Configure queue access policies.
+14. Implement message processing using Python and boto3.
+15. Troubleshoot duplicate message processing and visibility timeout issues.
+
+19. Amazon SES (Simple Email Service)
+
+1. Create and verify an SES identity.
+2. Verify an email address and domain.
+3. Configure domain authentication using SPF, DKIM, and DMARC.
+4. Move SES from sandbox to production.
+5. Send emails using the AWS Console.
+6. Send emails using AWS CLI.
+7. Send emails using Python and boto3.
+8. Configure HTML email templates.
+9. Configure configuration sets.
+10. Configure bounce and complaint notifications using SNS.
+11. Configure email event publishing.
+12. Troubleshoot email delivery and reputation issues.
+
+20. AWS Systems Manager (SSM)
+
+1. Configure SSM Agent on EC2 instances.
+2. Configure IAM instance profiles for Systems Manager.
+3. Connect to EC2 using Session Manager without SSH.
+4. Execute shell commands using Run Command.
+5. Execute commands on multiple EC2 instances.
+6. Create and execute custom SSM documents.
+7. Configure Patch Manager for Linux and Windows.
+8. Configure Maintenance Windows.
+9. Store configuration values using Parameter Store.
+10. Store SecureString parameters using KMS.
+11. Configure State Manager associations.
+12. Configure Automation runbooks.
+13. Use Fleet Manager to manage EC2 instances.
+14. Configure Inventory collection.
+15. Troubleshoot instances that are not appearing as managed nodes.
+
+21. Amazon RDS (Relational Database Service)
+
+1. Create MySQL and PostgreSQL RDS instances.
+2. Configure database credentials and master passwords.
+3. Configure DB subnet groups.
+4. Configure security groups for database connectivity.
+5. Connect to RDS from EC2 and local systems.
+6. Create databases, tables, and database users.
+7. Configure automated backups.
+8. Create manual DB snapshots.
+9. Restore databases from snapshots.
+10. Modify DB instance types and storage.
+11. Enable storage autoscaling.
+12. Configure Multi-AZ deployments.
+13. Create read replicas.
+14. Configure encryption at rest using KMS.
+15. Enable Enhanced Monitoring and Performance Insights.
+16. Configure RDS logs and CloudWatch alarms.
+17. Configure maintenance windows and backup retention.
+18. Troubleshoot connection timeouts, authentication, and database performance issues.
+
+22. AWS CloudTrail
+
+1. Create and configure a CloudTrail trail.
+2. Enable management event logging.
+3. Configure read and write event selection.
+4. Configure S3 as a CloudTrail log destination.
+5. Enable CloudTrail log file validation.
+6. Configure multi-region trails.
+7. Enable CloudTrail data events for S3 and Lambda.
+8. Query CloudTrail events using Event History.
+9. Identify who created, modified, or deleted AWS resources.
+10. Integrate CloudTrail with CloudWatch Logs.
+11. Configure EventBridge rules for specific API activities.
+12. Investigate suspicious API activity using CloudTrail.
+
+23. AWS KMS (Key Management Service)
+
+1. Create customer-managed KMS keys.
+2. Create symmetric and asymmetric keys.
+3. Configure key administrators and key users.
+4. Configure key policies.
+5. Configure key grants.
+6. Encrypt and decrypt data using KMS.
+7. Enable automatic key rotation.
+8. Configure manual key rotation.
+9. Encrypt S3 objects using SSE-KMS.
+10. Encrypt EBS volumes using KMS.
+11. Encrypt RDS databases using KMS.
+12. Configure cross-account KMS access.
+13. Schedule key deletion and cancel deletion.
+14. Monitor KMS API activity using CloudTrail.
+
+24. AWS Secrets Manager
+
+1. Create secrets for database credentials.
+2. Store application API keys and passwords.
+3. Retrieve secrets using AWS CLI.
+4. Retrieve secrets using Python and boto3.
+5. Configure automatic secret rotation.
+6. Configure secret rotation using Lambda.
+7. Integrate Secrets Manager with RDS.
+8. Integrate Secrets Manager with ECS task definitions.
+9. Configure resource-based policies.
+10. Configure cross-account secret access.
+11. Configure secret replication across regions.
+12. Monitor secret access using CloudTrail.
+
+25. AWS WAF (Web Application Firewall)
+
+1. Create a Web ACL.
+2. Associate WAF with an Application Load Balancer.
+3. Associate WAF with CloudFront.
+4. Configure AWS Managed Rule Groups.
+5. Configure IP-based blocking rules.
+6. Create custom rules based on URI paths.
+7. Configure rate-based rules to prevent excessive requests.
+8. Configure geographic match rules.
+9. Configure SQL injection protection.
+10. Configure Cross-Site Scripting (XSS) protection.
+11. Configure CAPTCHA and challenge actions.
+12. Enable WAF logging.
+13. Analyze blocked and allowed requests.
+14. Troubleshoot false positives and rule priority issues.
+
+26. Amazon GuardDuty
+
+1. Enable GuardDuty in an AWS account.
+2. Enable GuardDuty across multiple regions.
+3. Configure GuardDuty delegated administrator using Organizations.
+4. Review security findings.
+5. Investigate suspicious EC2 network activity.
+6. Investigate compromised IAM credentials.
+7. Configure GuardDuty S3 Protection.
+8. Configure EKS Protection.
+9. Configure Malware Protection for EC2.
+10. Integrate GuardDuty findings with EventBridge.
+11. Configure SNS notifications for critical findings.
+12. Generate sample findings and test the response workflow.
+13. Archive and suppress findings using filters.
+
+27. AWS Security Hub
+
+1. Enable AWS Security Hub.
+2. Enable security standards such as AWS Foundational Security Best Practices.
+3. Enable CIS AWS Foundations Benchmark where supported.
+4. Review security findings and compliance status.
+5. Configure security controls.
+6. Configure custom insights.
+7. Integrate Security Hub with GuardDuty.
+8. Integrate Security Hub with Inspector and Macie.
+9. Configure cross-region aggregation.
+10. Configure delegated administration using Organizations.
+11. Automate finding responses using EventBridge and Lambda.
+12. Generate sample findings and validate security workflows.
+
+28. AWS Organizations
+
+1. Create an AWS Organization.
+2. Invite existing AWS accounts.
+3. Create member accounts.
+4. Organize accounts using Organizational Units (OUs).
+5. Create Service Control Policies (SCPs).
+6. Restrict access to selected AWS regions.
+7. Deny access to specific AWS services using SCPs.
+8. Configure centralized billing.
+9. Configure consolidated billing reports.
+10. Enable trusted access for supported AWS services.
+11. Configure delegated administrator accounts.
+12. Test SCP restrictions using member accounts.
+13. Understand the difference between IAM policies and SCPs.
+
+29. AWS Control Tower
+
+1. Understand Control Tower architecture and landing zones.
+2. Set up an AWS Control Tower landing zone.
+3. Configure the home region and additional governed regions.
+4. Create accounts using Account Factory.
+5. Configure Organizational Units.
+6. Enable preventive guardrails.
+7. Enable detective guardrails.
+8. Enable proactive controls where supported.
+9. Monitor account compliance.
+10. Configure account-level governance.
+11. Integrate Control Tower with AWS Organizations.
+12. Troubleshoot landing zone and account enrollment failures.
+
+30. AWS Config
+
+1. Enable AWS Config.
+2. Configure configuration recorders.
+3. Configure delivery channels using S3 and SNS.
+4. View resource configuration history.
+5. View resource relationships.
+6. Enable AWS-managed Config rules.
+7. Create custom Config rules using Lambda.
+8. Detect publicly accessible S3 buckets.
+9. Detect EC2 instances without required tags.
+10. Detect unencrypted EBS volumes.
+11. Configure automatic remediation using SSM Automation.
+12. Create conformance packs.
+13. Generate compliance reports.
+14. Troubleshoot Config recording and rule evaluation issues.
+
+31. Amazon EventBridge
+
+1. Create EventBridge event buses.
+2. Create custom event buses.
+3. Create event rules for EC2 state changes.
+4. Create scheduled rules for recurring tasks.
+5. Configure event patterns using JSON.
+6. Integrate EventBridge with Lambda.
+7. Integrate EventBridge with SNS and SQS.
+8. Configure cross-account event delivery.
+9. Configure event archiving and replay.
+10. Configure dead-letter queues.
+11. Configure API destinations.
+12. Build automated EC2 start/stop workflows.
+13. Troubleshoot event pattern matching and failed target delivery.
+
+32. Amazon Athena
+
+1. Create Athena workgroups.
+2. Configure S3 as a query result location.
+3. Create databases in the AWS Glue Data Catalog.
+4. Create external tables for CSV files.
+5. Create external tables for JSON files.
+6. Create external tables for Parquet files.
+7. Query S3 data using SQL.
+8. Query CloudFront access logs.
+9. Query Application Load Balancer access logs.
+10. Query CloudTrail logs.
+11. Create partitioned tables.
+12. Optimize queries using Parquet and partition projection.
+13. Configure workgroup data usage limits.
+14. Export query results to S3.
+15. Troubleshoot schema, partition, and data type mismatch errors.
+
+33. AWS Trusted Advisor
+
+1. Access the Trusted Advisor dashboard.
+2. Review cost optimization recommendations.
+3. Review security recommendations.
+4. Review fault tolerance checks.
+5. Review performance recommendations.
+6. Review service quota checks.
+7. Review operational excellence recommendations where available.
+8. Identify idle and underutilized resources.
+9. Identify underutilized EC2 instances.
+10. Review security group configuration recommendations.
+11. Configure notifications for Trusted Advisor updates.
+12. Create an action plan based on recommendations.
+
+34. AWS Application Migration Service (MGN)
+
+1. Understand the AWS MGN architecture.
+2. Initialize the Application Migration Service.
+3. Install the AWS Replication Agent on source Linux servers.
+4. Install the AWS Replication Agent on source Windows servers.
+5. Configure replication settings.
+6. Configure staging area subnet and security groups.
+7. Monitor source server replication status.
+8. Launch test instances.
+9. Validate migrated application functionality.
+10. Configure cutover settings.
+11. Perform final cutover to AWS.
+12. Troubleshoot replication and launch failures.
+
+35. AWS Database Migration Service (DMS)
+
+1. Configure a source database endpoint.
+2. Configure a target database endpoint.
+3. Create a DMS replication instance or supported replication configuration.
+4. Configure network connectivity and security groups.
+5. Create database migration tasks.
+6. Migrate MySQL databases to Amazon RDS.
+7. Migrate PostgreSQL databases to Amazon RDS.
+8. Perform full-load database migration.
+9. Configure Change Data Capture (CDC).
+10. Configure ongoing replication.
+11. Monitor migration task status.
+12. Validate migrated database records.
+13. Troubleshoot connection and replication errors.
+
+36. AWS Application Discovery Service
+
+1. Understand agentless and agent-based discovery.
+2. Configure Application Discovery Service.
+3. Set up AWS Migration Hub.
+4. Configure discovery using supported discovery methods.
+5. Collect server inventory information.
+6. Collect application dependency information.
+7. Analyze CPU, memory, and utilization metrics.
+8. Group discovered servers into applications.
+9. Export discovery data.
+10. Analyze application dependencies before migration.
+11. Prepare migration assessment reports.
+12. Understand the relationship between discovery data and AWS migration planning.
+
+37. AWS DataSync
+
+1. Understand DataSync architecture.
+2. Create an AWS DataSync agent where required.
+3. Configure an NFS source location.
+4. Configure an SMB source location.
+5. Configure an S3 destination location.
+6. Configure EFS as a destination.
+7. Create DataSync tasks.
+8. Configure task scheduling.
+9. Configure bandwidth limits.
+10. Configure include and exclude filters.
+11. Perform initial data synchronization.
+12. Configure incremental synchronization.
+13. Monitor transfer progress and logs.
+14. Validate transferred files and permissions.
+15. Troubleshoot network and permission errors.
+
+38. Amazon Inspector
+
+1. Enable Amazon Inspector.
+2. Enable EC2 vulnerability scanning.
+3. Enable ECR container image scanning.
+4. Enable Lambda function vulnerability scanning.
+5. Configure delegated administration using Organizations.
+6. Review vulnerability findings.
+7. Identify vulnerable software packages.
+8. Analyze CVE and severity information.
+9. Prioritize critical and high-risk findings.
+10. Integrate Inspector findings with Security Hub.
+11. Configure EventBridge notifications.
+12. Remediate vulnerabilities and verify updated findings.
+
+39. AWS CodeBuild
+
+1. Create a CodeBuild project.
+2. Configure source code from GitHub.
+3. Configure source code from CodeCommit where available.
+4. Create a `buildspec.yml` file.
+5. Configure build environments.
+6. Configure environment variables.
+7. Build a Java Maven application.
+8. Build a Node.js application.
+9. Build a Docker image.
+10. Push Docker images to ECR.
+11. Store build artifacts in S3.
+12. Configure build logs using CloudWatch.
+13. Configure IAM service roles.
+14. Configure build caching.
+15. Troubleshoot build failures and dependency issues.
+
+40. AWS CodeDeploy
+
+1. Create a CodeDeploy application.
+2. Configure EC2/on-premises deployment groups.
+3. Install and configure the CodeDeploy agent on EC2.
+4. Create an `appspec.yml` file.
+5. Deploy application files to EC2.
+6. Configure lifecycle hooks.
+7. Deploy applications to Auto Scaling Groups.
+8. Configure in-place deployments.
+9. Configure blue/green deployments.
+10. Integrate CodeDeploy with ALB.
+11. Configure deployment rollback.
+12. Troubleshoot failed deployment lifecycle events.
+
+41. AWS CodePipeline
+
+1. Create a CodePipeline pipeline.
+2. Configure GitHub as the source provider.
+3. Configure CodeBuild as the build stage.
+4. Configure CodeDeploy as the deployment stage.
+5. Configure S3 as an artifact store.
+6. Create a CI/CD pipeline for a Java Maven application.
+7. Create a CI/CD pipeline for a Docker application.
+8. Deploy applications automatically to EC2.
+9. Deploy container applications to ECS.
+10. Configure pipeline execution triggers.
+11. Configure manual approval stages.
+12. Configure pipeline notifications.
+13. Configure failure handling and rollback.
+14. Troubleshoot failed pipeline executions.
+
+42. AWS Health Dashboard
+
+1. Access the AWS Health Dashboard.
+2. Review account-specific health events.
+3. Review public AWS service health events.
+4. Filter events by AWS region and service.
+5. Review scheduled maintenance notifications.
+6. Review planned lifecycle and infrastructure changes.
+7. Configure AWS Health event notifications using EventBridge.
+8. Send AWS Health notifications using SNS.
+9. Configure organizational health event visibility.
+10. Create an operational response workflow for AWS Health events.
+
+43. AWS Cost Explorer
+
+1. Enable Cost Explorer.
+2. Review monthly AWS spending.
+3. Analyze costs by AWS service.
+4. Analyze costs by region.
+5. Analyze costs by linked account.
+6. Analyze costs using tags.
+7. Create cost reports.
+8. Compare month-over-month spending.
+9. Analyze EC2 and S3 expenses.
+10. Configure cost forecasts.
+11. Identify high-cost AWS services.
+12. Export cost reports for analysis.
+13. Analyze Reserved Instance and Savings Plans utilization.
+
+44. AWS Budgets
+
+1. Create a monthly cost budget.
+2. Create a usage budget.
+3. Create a Savings Plans budget.
+4. Create a Reserved Instance budget.
+5. Configure actual cost thresholds.
+6. Configure forecasted cost thresholds.
+7. Configure email notifications.
+8. Configure SNS notifications.
+9. Configure budget alerts at 50%, 80%, and 100%.
+10. Configure budget actions where supported.
+11. Monitor account spending against budgets.
+12. Create separate budgets for projects and environments.
+
+45. AWS Amplify
+
+1. Create an Amplify application.
+2. Connect a GitHub repository.
+3. Configure automatic frontend deployments.
+4. Deploy a React application.
+5. Deploy a Next.js application.
+6. Configure build settings using `amplify.yml`.
+7. Configure development, staging, and production branches.
+8. Configure custom domain names.
+9. Configure HTTPS using managed certificates.
+10. Configure environment variables.
+11. Configure preview deployments.
+12. Configure backend resources using Amplify where appropriate.
+13. Monitor build and deployment logs.
+14. Troubleshoot build failures and domain configuration issues.
+
+46. Amazon Macie
+
+1. Enable Amazon Macie.
+2. Configure S3 bucket discovery.
+3. Review sensitive data discovery results.
+4. Identify publicly accessible S3 buckets.
+5. Configure sensitive data discovery jobs.
+6. Create custom data identifiers.
+7. Detect personally identifiable information (PII).
+8. Detect financial and sensitive data patterns.
+9. Configure managed data identifiers.
+10. Configure Macie findings export.
+11. Integrate Macie findings with EventBridge and Security Hub.
+12. Configure delegated administration using Organizations.
+13. Investigate and remediate sensitive data exposure.
+
+47. Amazon DynamoDB
+
+1. Create DynamoDB tables.
+2. Configure partition keys and sort keys.
+3. Insert items using the AWS Console.
+4. Insert items using AWS CLI.
+5. Insert items using Python and boto3.
+6. Perform GetItem, PutItem, UpdateItem, and DeleteItem operations.
+7. Query and scan DynamoDB tables.
+8. Configure Global Secondary Indexes (GSI).
+9. Configure Local Secondary Indexes (LSI).
+10. Configure on-demand and provisioned capacity modes.
+11. Configure auto scaling.
+12. Configure DynamoDB Streams.
+13. Integrate DynamoDB Streams with Lambda.
+14. Configure DynamoDB TTL.
+15. Configure Point-in-Time Recovery.
+16. Configure global tables for multi-region replication.
+17. Configure encryption using KMS.
+18. Monitor DynamoDB using CloudWatch.
+
+48. Amazon Aurora
+
+1. Create an Amazon Aurora MySQL cluster.
+2. Create an Amazon Aurora PostgreSQL cluster.
+3. Configure Aurora DB subnet groups.
+4. Configure cluster endpoints.
+5. Create Aurora writer and reader instances.
+6. Connect to Aurora from EC2.
+7. Create databases, tables, and database users.
+8. Configure Aurora read replicas.
+9. Configure Aurora Auto Scaling for reader instances.
+10. Configure automated backups.
+11. Create and restore cluster snapshots.
+12. Configure Aurora Serverless v2.
+13. Configure encryption using KMS.
+14. Monitor database performance using CloudWatch and Performance Insights.
+15. Configure Aurora Global Database.
+16. Troubleshoot connection and database performance issues.
+
+49. Amazon VPC (Virtual Private Cloud)
+
+1. Create a custom VPC.
+2. Configure IPv4 CIDR blocks and subnets.
+3. Create public and private subnets.
+4. Configure Internet Gateways.
+5. Configure NAT Gateways.
+6. Configure route tables and routes.
+7. Associate route tables with subnets.
+8. Configure security groups.
+9. Configure network ACLs.
+10. Create VPC endpoints for S3 and other supported services.
+11. Configure VPC peering connections.
+12. Configure VPC Flow Logs.
+13. Configure Elastic IP addresses.
+14. Configure VPC DNS resolution and DNS hostnames.
+15. Deploy EC2 instances in public and private subnets.
+16. Configure a bastion host for private EC2 access.
+17. Configure VPC connectivity using Site-to-Site VPN.
+18. Configure VPC traffic monitoring and troubleshooting.
+19. Design a three-tier architecture using public, private application, and private database subnets.
+20. Troubleshoot routing, NAT, DNS, and security group issues.
+
+50. AWS Transit Gateway
+
+1. Create an AWS Transit Gateway.
+2. Create Transit Gateway attachments for multiple VPCs.
+3. Attach multiple VPCs to a central Transit Gateway.
+4. Configure Transit Gateway route tables.
+5. Configure route propagation.
+6. Configure route associations.
+7. Configure communication between multiple VPCs.
+8. Implement centralized network connectivity using a hub-and-spoke architecture.
+9. Configure Transit Gateway peering across regions.
+10. Configure VPN attachments to Transit Gateway.
+11. Configure centralized internet egress architecture.
+12. Configure network segmentation using multiple Transit Gateway route tables.
+13. Monitor Transit Gateway traffic using Flow Logs.
+14. Troubleshoot routing and connectivity issues.
+
+
